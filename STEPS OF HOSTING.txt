@@ -1,0 +1,9 @@
+1. Win + R -> cmd -> type in D: -> type in cd Users\31894\Desktop\Bezryadin_Web -> type in -> python -m http.server 8000
+2. Go to broswer: type in "http://localhost:8000"
+
+
+
+1. Win + R -> cmd -> type in D: -> type in cd Users\31894\Desktop\Bez_Old_Web -> type in -> python -m http.server 8000
+2. Go to broswer: type in "http://localhost:8000"
+
+Network: \\engr-web-02.engr.illinois.edu\research.physics.illinois.edu\Bezryadin 

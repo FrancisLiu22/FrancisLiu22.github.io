@@ -1,0 +1,255 @@
+<div id="head-include"></div>
+<script>
+  fetch('head.html')
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById('head-include').innerHTML = html;
+    })
+    .catch(err => console.error('Failed to load head.html:', err));
+</script>
+
+<body>
+    <div id="header-include"></div>
+	<div id="navigator-include"></div>
+
+		<script>
+		  function includeHTML(id, file) {
+			fetch(file)
+			  .then(res => res.text())
+			  .then(html => {
+				document.getElementById(id).innerHTML = html;
+			  })
+			  .catch(err => console.error(`Failed to load ${file}:`, err));
+		  }
+
+		  includeHTML('header-include', 'header.html');
+		  includeHTML('navigator-include', 'navigator.html');
+		</script>
+    <div class="members">
+      <div class="left-part">
+        <div class="left-cont">
+          <div class="member-container">
+            <div class="person-image">
+              <img src="members/Eduard-Ilin.jpg" alt="Eduard Ilin">
+            </div>
+            <div class="name">
+              <div class="total-name"><a href="mailto:eduard@illinois.edu">Eduard Ilin</a></div>
+              <div class="description">Research Associate</div>
+            </div>
+          </div>
+          <div class="member-container">
+            <div class="person-image">
+              <img src="members/Ziqi-Zhao.jpg" alt="Ziqi Zhao">
+            </div>
+            <div class="name">
+              <div class="total-name"><a href="mailto:ziqiz7@illinois.edu">Ziqi Zhao</a></div>
+              <div class="description">Physics PhD Student</div>
+            </div>
+          </div>
+		 <div class="member-container">
+            <div class="person-image">
+              <img src="members/Autumn-Bauman.png" alt="Autumn Bauman">
+            </div>
+            <div class="name">
+              <div class="total-name"><a href="mailto:autumnb5@illinois.edu">Autumn Bauman</a></div>
+              <div class="description">Physics PhD Student</div>
+            </div>
+          </div>
+		  <div class="member-container">
+            <div class="person-image">
+              <img src="members/Jiri.jpg" alt="Jiri Kataman-Kustwan">
+            </div>
+            <div class="name">
+              <div class="total-name"><a href="mailto:jkata7@illinois.edu">Jiri Kataman-Kustwan</a></div>
+              <div class="description">Undergraduate Physics Student</div>
+            </div>
+          </div>
+		  <div class="member-container">
+            <div class="person-image">
+              <img src="members/Eric-Lai.jpg" alt="Eric Lai">
+            </div>
+            <div class="name">
+              <div class="total-name"><a href="mailto:ericlai2@illinois.edu">Eric Lai</a></div>
+              <div class="description">Undergraduate Physics Student</div>
+            </div>
+          </div>
+		  <div class="member-container">
+            <div class="person-image">
+              <img src="members/Alex-Yi.jpg" alt="Alex Yi">
+            </div>
+            <div class="name">
+              <div class="total-name"><a href="mailto:alexyi2@illinois.edu">Alex Yi</a></div>
+              <div class="description">Undergraduate Physics Student</div>
+            </div>
+          </div>
+          <!-- <div class="member-container">
+            <div class="person-image">
+              <img src="members/default-profile-pic.jpg" alt="Insert Name Here">
+            </div>
+            <div class="name">
+              <div class="total-name">Insert Name Here</div>
+              <div class="description">Insert description</div>
+            </div>
+          </div>
+          <div class="member-container">
+            <div class="person-image">
+              <img src="members/default-profile-pic.jpg" alt="Insert Name Here">
+            </div>
+            <div class="name">
+              <div class="total-name">Insert Name Here</div>
+              <div class="description">Insert description</div>
+            </div>
+          </div> -->
+          <div class="alumni">
+          <div class="alumni-title">
+            Alumni
+          </div>
+          <ul>
+            <li>Andrey Belki (Intel)
+            <li>Andrew Murpehy (Physicist, JHU/APL)
+            <li>Matthew Brenner (Physicist, UTsouthwestern Medical Center)</li>
+            <li>Thomas Aref (Fox Robotics)</li>
+			<li>Xiangyu Song</li>
+            <li>Mitrabhanu Sahu (Intel)</li>
+            <li>Hisashi Kajiura (Sony Corporation)</li>
+            <li>Robert Dinsmore III (Northrop Grumman)</li>
+            <li>Myung-Ho Bae (Korea Research Institute of Standards and Science)</li>
+            <li>A. Rogachev (Faculty, University of Utah)</li>
+            <li>David S. Hopkins (LAM Technology)</li>
+            <li>Ulas C. Coskun (ISS Inc.)</li>
+            <li>Anthony T. Bollinger (Physicist, Brookhaven National Laboratory)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="top-part">
+        <div class="top-cont">
+          <div class="member-container">
+            <div class="person-image">
+              <img src="members/Alexey-Bezryadin.jpg" alt="Alexey Bezryadin">
+            </div>
+            <div class="name">
+
+              <div class="total-name"><a href="mailto:bezryadi@illinois.edu">Alexey Bezryadin</a></div>
+              <div class="description">Lead Professor: <a href="https://physics.illinois.edu/people/directory/profile/bezryadi" target="_blank">Department Page</a>
+              <br></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right-part">
+        <div class="right-cont">
+          <div class="member-container">
+            <div class="person-image">
+              <img src="members/Irina-Burkova.jpg" alt="Irina Burkova">
+            </div>
+            <div class="name">
+
+              <div class="total-name"><a href="mailto:burkova@illinois.edu">Irina Burkova</a></div>
+              <div class="description">Research Associate</div>
+            </div>
+          </div>
+          <div class="member-container">
+            <div class="person-image">
+              <img src="members/Vishal-Ganesan.jpg" alt="Vishal Ganesan">
+            </div>
+            <div class="name">
+
+              <div class="total-name"><a href="mailto:vishalg2@illinois.edu">Vishal Ganesan</a></div>
+              <div class="description">Physics PhD Student</div>
+            </div>
+          </div>
+          <div class="member-container">
+            <div class="person-image">
+              <img src="members/Cliff-Sun.jpg" alt="Cliff Sun">
+            </div>
+            <div class="name">
+
+              <div class="total-name"><a href="mailto:cliffxs2@illinois.edu">Cliff Sun</a></div>
+              <div class="description">Undergraduate Physics Student</div>
+            </div>
+          </div>
+		  <div class="member-container">
+            <div class="person-image">
+              <img src="members/Ryan-Huang.jpg" alt="Ryan Huang">
+            </div>
+            <div class="name">
+
+              <div class="total-name"><a href="mailto:ciyouh2@illinois.edu">Ryan Huang</a></div>
+              <div class="description">Undergraduate Physics Student</div>
+            </div>
+          </div>
+          <div class="member-container">
+            <div class="person-image">
+              <img src="members/Francis_Liu.jpg" alt="Francis Liu">
+            </div>
+            <div class="name">
+
+              <div class="total-name"><a href="mailto:yl138@illinois.edu">Francis Liu</a></div>
+              <div class="description">Undergraduate Physics Student</div>
+            </div>
+          </div>
+          <!-- <div class="member-container">
+            <div class="person-image">
+              <img src="members/default-profile-pic.jpg" alt="Insert Name Here">
+            </div>
+            <div class="name">
+
+              <div class="total-name">Insert Name Here</div>
+              <div class="description">Insert description</div>
+            </div>
+          </div>
+          <div class="member-container">
+            <div class="person-image">
+              <img src="members/default-profile-pic.jpg" alt="Insert Name Here">
+            </div>
+            <div class="name">
+
+              <div class="total-name">Insert Name Here</div>
+              <div class="description">Insert description</div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+    
+    <!--  ******************************** Alumni *******************************  -->
+    <!--   <table>
+
+  <tr><td class="title">Alumni</td></tr>
+  <tr><td class="alumni">
+  <ul>
+  <li>Andrey Belki (Intel)
+  <li>Andrew Murpehy (Physicist, JHU/APL)
+  <li>Matthew Brenner (Physicist, UTsouthwestern Medical Center)</li>
+  <li>Thomas Aref</li>
+  <li>Mitrabhanu Sahu (Intel)</li>
+  <li>Hisashi Kajiura (Sony Corporation)</li>
+  <li>Robert Dinsmore III (Northrop Grumman)</li>
+  <li>Myung-Ho Bae (Korea Research Institute of Standards and Science)</li>
+  <li>A. Rogachev (Faculty, University of Utah)</li>
+  <li>David S. Hopkins (LAM Technology)</li>
+  <li>Ulas C. Coskun (ISS Inc.)</li>
+  <li>Anthony T. Bollinger (Physicist, Brookhaven National Laboratory)</li>
+  </ul>
+  </td></tr>
+  </table> -->
+
+    <!--   ************************* photos ********************************* -->
+    <!-- <table>
+  <tr><td class="title">Photos</td></tr>
+  <tr>
+  <td class="photos_left_td"> <img style="width:450px;margin-left:5px" src="./members/group_photo_0816.jpg" />
+  </td>
+  <td class="photos_right_td"><br />
+      Thomas fairwell lunch <br />
+	  Jaseung, Andrey, Alexey, Ulas, Thomas, and Matt (clockwise from left)
+  </td>
+  </tr>
+  </table> -->
+    <!-- content -->
+    <!--#include file="./footer.html"-->
+</body>
+</head>
+
+</html>

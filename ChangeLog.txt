@@ -1,0 +1,25 @@
+Index.html:
+Modified. (but only for [home], moved Container Class)
+
+Navigator.html
+Modified. (Added"hover-underline" + NavLink class.)
+
+Member.html:
+Modified (only removed "Container")
+
+Research.html:
+Modified (only removed "Container")
+
+Style.css: 
+Modified. (direct replace)
+
+head.html:
+Modified. (direct replace)
+
+Publication.html:
+Modified. (Added one more entry in <ul>, and added style for <container>)
+
+Picture Folder:
+Added Cover Picture
+
+

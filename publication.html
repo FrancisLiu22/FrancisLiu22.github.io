@@ -1,0 +1,866 @@
+<div id="head-include"></div>
+<script>
+  fetch('head.html')
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById('head-include').innerHTML = html;
+    })
+    .catch(err => console.error('Failed to load head.html:', err));
+</script>
+
+<body>
+    <div id="container" style = "background-image: none">
+        <div id="header-include"></div>
+		<div id="navigator-include"></div>
+
+		<script>
+		  function includeHTML(id, file) {
+			fetch(file)
+			  .then(res => res.text())
+			  .then(html => {
+				document.getElementById(id).innerHTML = html;
+			  })
+			  .catch(err => console.error(`Failed to load ${file}:`, err));
+		  }
+
+		  includeHTML('header-include', 'header.html');
+		  includeHTML('navigator-include', 'navigator.html');
+		</script>
+
+        <div class="pub">
+            <br />
+            <div class ="pub-title">Publications</div>
+            <table class="easy-access-pub">
+                <tr ID="top">
+                    <td><a href="#JournalArticle">Journal Articles</a> | </td>
+                    <td><a href="#PhDThesis">Ph.D Thesis</a> | </td>
+                    <td><a href="#Book">Book</a> | </td>
+                    <td><a href="#Patent">Patents</a></td>
+                </tr>
+            </table>
+            <div class="total-title" ID="JournalArticle"> Journal articles</div>
+            <ul>
+				<li>
+                    <span class="title">A Dayem Loop Qubit Based on Interfering Superconducting Nanowires</span>
+                    <span class="author">Cliff Sun, Alexey Bezryadin</span>
+                    <span class="journal">arXiv preprint arXiv:2603.17214</span>
+                    <span class="vol"></span>,
+                    <span class="page"></span>
+                    <span class="year">(2026)</span>
+                    <span class="publink"><a href="https://arxiv.org/abs/2603.17214" target="_blank">(link)</a></span>
+                </li>
+				<li>
+                    <span class="title">Two-Level System Microwave Losses in Chemically Pure Bulk Niobium Oxide Samples</span>
+                    <span class="author">Vishal Ganesan, Jiankun Zhang, Drew G. Wild, Alexey Bezryadin</span>
+                    <span class="journal">arXiv preprint arXiv:2601.06668</span>
+                    <span class="vol"></span>,
+                    <span class="page"></span>
+                    <span class="year">(2026)</span>
+                    <span class="publink"><a href="https://arxiv.org/abs/2601.06668" target="_blank">(link)</a></span>
+                </li>
+				
+				<li>
+                    <span class="title">Perfect Superconducting Diode and Supercurrent Range Controller</span>
+                    <span class="author">Cliff Sun, Ziqi Zhao, Alexey Bezryadin</span>
+                    <span class="journal">Physics Letters A</span>
+                    <span class="vol">563</span>,
+                    <span class="page">131055</span>
+                    <span class="year">(2025)</span>
+                    <span class="publink"><a href="https://doi.org/10.1016/j.physleta.2025.131055" target="_blank">(link)</a></span>
+                </li>
+				
+			    <li>
+                    <span class="title">Multiple-Nanowire Superconducting Quantum Interference Devices:
+						Critical Currents, Symmetries, and Vorticity Stability Regions</span>
+                    <span class="author">Cliff Sun, Alexey Bezryadin</span>
+                    <span class="journal">Nano Ex.</span>
+                    <span class="vol">6</span>,
+                    <span class="page">035014</span>
+                    <span class="year">(2025)</span>
+                    <span class="publink"><a href="https://iopscience.iop.org/article/10.1088/2632-959X/adfe5c" target="_blank">(link)</a></span>
+                </li>
+				
+                <li>
+                    <span class="title">Interference, diffraction, and diode effects in superconducting array based on
+                        bismuth antimony telluride topological insulator</span>
+                    <span class="author">Xiangyu Song, Soorya Suresh Babu, Yang Bai, Dmitry S Golubev, Irina Burkova,
+                        Alexander Romanov, Eduard Ilin, James N Eckstein, Alexey Bezryadin</span>
+                    <span class="journal">Communications Physics</span>
+                    <span class="vol">6</span>,
+                    <span class="page">177</span>
+                    <span class="year">(2023)</span>
+                    <span class="publink"><a href="https://www.nature.com/articles/s42005-023-01288-9"
+                            target="_blank">(link)</a></span>
+                </li>
+
+                <li>
+                    <span class="title">Interference, diffraction, and diode effects in superconducting array based on
+                        Bi0. 8Sb1. 2Te3 topological insulator</span>
+                    <span class="author">Xiangyu Song, Soorya Suresh-Babu, Yang Bai, Dmitry Golubev, Irina Burkova,
+                        Alexander Romanov, Eduard Ilin, James N Eckstein, Alexey Bezryadin</span>
+                    <span class="journal">arXiv preprint arXiv:2209.14266</span>
+                    <span class="vol"></span>,
+                    <span class="page"></span>
+                    <span class="year">(2022)</span>
+                    <span class="publink"><a href="https://arxiv.org/abs/2209.14266" target="_blank">(link)</a></span>
+                </li>
+
+                <li>
+                    <span class="title">
+                        Supercurrent-controlled kinetic inductance superconducting memory element</span>
+                    <span class="author">Eduard Ilin, Xiangyu Song, Irina Burkova, Andrew Silge, Ziang Guo, Konstantin
+                        Ilin, Alexey Bezryadin</span>
+                    <span class="journal">
+                        Applied Physics Letters</span>
+                    <span class="vol">118</span>,
+                    <span class="page"></span>
+                    <span class="year">(2021)</span>
+                    <span class="publink"><a href="https://pubs.aip.org/aip/apl/article/118/11/112603/39528"
+                            target="_blank">(link)</a></span>
+                </li>
+                <li>
+                    <span class="title">
+
+                        Dimensional changes in geological sandstone caused by wetting</span>
+                    <span class="author">Irina Burkova, Eduard Ilin, Alexander N Belov, Alexey Bezryadin</span>
+                    <span class="journal">
+                        Physics Education</span>
+                    <span class="vol">56</span>,
+                    <span class="page">034001</span>
+                    <span class="year">(2021)</span>
+                    <span class="publink"><a href="https://iopscience.iop.org/article/10.1088/1361-6552/abdea0/meta"
+                            target="_blank">(link)</a></span>
+                </li>
+                <li>
+                    <span class="title">
+
+                        Giant energy storage effect in nanolayer capacitors charged by the field emission
+                        tunneling</span>
+                    <span class="author">Eduard Ilin, Irina Burkova, Eugene V Colla, Michael Pak, Alexey
+                        Bezryadin</span>
+                    <span class="journal">
+                        Nanotechnology</span>
+                    <span class="vol">32</span>,
+                    <span class="page">155401</span>
+                    <span class="year">(2021)</span>
+                    <span class="publink"><a href="https://iopscience.iop.org/article/10.1088/1361-6528/abd8f7/meta"
+                            target="_blank">(link)</a></span>
+                </li>
+
+                <li>
+                    <span class="title">
+                        Superconducting phase transition in inhomogeneous chains of superconducting islands</span>
+                    <span class="author">Eduard Ilin, Irina Burkova, Xiangyu Song, Michael Pak, Dmitri S Golubev, Alexey
+                        Bezryadin</span>
+                    <span class="journal">Physical Review B</span>
+                    <span class="vol">102</span>,
+                    <span class="page">134502</span>
+                    <span class="year">(2020)</span>
+                    <span class="publink"><a href="https://journals.aps.org/prb/abstract/10.1103/PhysRevB.102.134502"
+                            target="_blank">(link)</a></span>
+                </li>
+
+                <li>
+                    <span class="title">
+                        Nanometer-scale deformations of Berea sandstone under moisture-content variations</span>
+                    <span class="author">Eduard Ilin, Maxim Marchevsky, Irina Burkova, Michael Pak, Alexey
+                        Bezryadin</span>
+                    <span class="journal">Physical Review Applied</span>
+                    <span class="vol">13</span>,
+                    <span class="page">024043</span>
+                    <span class="year">(2020)</span>
+                    <span class="publink"><a
+                            href="https://journals.aps.org/prapplied/abstract/10.1103/PhysRevApplied.13.024043"
+                            target="_blank">(link)</a></span>
+                </li>
+                <li>
+                    <span class="title">
+                        Nanoscale detection of metastable states in porous and granular media</span>
+                    <span class="author">Eduard Ilin, Yaofa Li, Eugene V Colla, Kenneth T Christensen, Muhammad Sahimi,
+                        Maxim Marchevsky, Scott M Frailey, Alexey Bezryadin</span>
+                    <span class="journal">Journal of Applied Physics</span>
+                    <span class="vol">127</span>,
+                    <span class="page"></span>
+                    <span class="year">(2020)</span>
+                    <span class="publink"><a
+                            href="https://pubs.aip.org/aip/jap/article-abstract/127/2/024901/566539/Nanoscale-detection-of-metastable-states-in-porous?redirectedFrom=fulltext"
+                            target="_blank">(link)</a></span>
+                </li>
+                <li>
+                    <span class="title">
+                        Coulomb barrier creation by means of electronic field emission in nanolayer capacitors</span>
+                    <span class="author">Eduard Ilin, Irina Burkova, Timothy Draher, Eugene V Colla, Alfred Hübler,
+                        Alexey Bezryadin</span>
+                    <span class="journal">Nanoscale</span>
+                    <span class="vol">12</span>,
+                    <span class="page">18761-18770</span>
+                    <span class="year">(2020)</span>
+                    <span class="publink"><a
+                            href="https://pubs.rsc.org/en/content/articlelanding/2020/nr/d0nr04660d/unauth"
+                            target="_blank">(link)</a></span>
+                </li>
+                <li>
+                    <span class="title">
+                        Reversed photoeffect in transparent graphene nanocapacitors</span>
+                    <span class="author">A Belkin, E Ilin, I Burkova, A Bezryadin</span>
+                    <span class="journal">ACS Applied Electronic Materials</span>
+                    <span class="vol">1</span>,
+                    <span class="page">2671-2677</span>
+                    <span class="year">(2019)</span>
+                    <span class="publink"><a href="https://pubs.acs.org/doi/abs/10.1021/acsaelm.9b00659"
+                            target="_blank">(link)</a></span>
+                </li>
+                <li>
+                    <span class="title">Large energy storage efficiency of the dielectric layer of graphene
+                        nanocapacitors</span>
+                    <span class="author">Alexey Bezryadin, A Belkin, Eduard Ilin, M Pak, Eugene V Colla, A Hubler</span>
+                    <span class="journal">Nanotechnology</span>
+                    <span class="vol">28</span>,
+                    <span class="page">495401</span>
+                    <span class="year">(2017)</span>
+                    <span class="publink"><a href="https://iopscience.iop.org/article/10.1088/1361-6528/aa935c/meta"
+                            target="_blank">(link)</a></span>
+                </li>
+
+                <li>
+                    <span class="title">Asymmetric nanowire SQUID: Linear current-phase relation, stochastic switching,
+                        and symmetries</span>
+                    <span class="author">A Murphy, A Bezryadin</span>
+                    <span class="journal">Physical Review B</span>
+                    <span class="vol">96</span>,
+                    <span class="page">094507</span>
+                    <span class="year">(2017)</span>
+                    <span class="publink"><a href="https://journals.aps.org/prb/abstract/10.1103/PhysRevB.96.094507"
+                            target="_blank">(link)</a></span>
+                </li>
+                <li>
+                    <span class="title">Nanoscale superconducting memory based on the kinetic inductance of asymmetric
+                        nanowire loops</span>
+                    <span class="author">Andrew Murphy, Dmitri V Averin, Alexey Bezryadin</span>
+                    <span class="journal">New Journal of Physics</span>
+                    <span class="vol">19</span>,
+                    <span class="page">063015</span>
+                    <span class="year">(2017)</span>
+                    <span class="publink"><a href="https://iopscience.iop.org/article/10.1088/1367-2630/aa7331/meta"
+                            target="_blank">(link)</a></span>
+                </li>
+
+                <li>
+                    <span class="title">Recovery of alumina nanocapacitors after high voltage breakdown</span>
+                    <span class="author">A Belkin, A Bezryadin, L Hendren, A Hubler</span>
+                    <span class="journal">Scientific reports</span>
+                    <span class="vol">7</span>,
+                    <span class="page">932</span>
+                    <span class="year">(2017)</span>
+                    <span class="publink"><a href="https://www.nature.com/articles/s41598-017-01007-9"
+                            target="_blank">(link)</a></span>
+                </li>
+
+                <li>
+                    <span class="title">Decoherence and radiation-free relaxation in Meissner transmon qubit coupled to
+                        Abrikosov vortices</span>
+                    <span class="author">Jaseung Ku, Zack Yoscovits, Alex Levchenko, James Eckstein, Alexey
+                        Bezryadin</span>
+                    <span class="journal">Phys. Rev. B</span>
+                    <span class="vol">94</span>,
+                    <span class="page">165128</span>
+                    <span class="year">(2016)</span>
+                    <span class="publink"><a href="./publication/2016-MeissnerQubit.pdf"
+                            target="_blank">(link)</a></span>
+                </li>
+				<li>
+                    <span class="title">Training Concept, Evolution Time, and the Maximum Entropy Production Principle</span>
+                    <span class="author">Alexey Bezryadin and Erik Kountz</span>
+                    <span class="journal">Entropy</span>
+                    <span class="vol">18</span>,
+                    <span class="page">145</span>
+                    <span class="year">(2016)</span>
+                    <span class="publink"><a href="./publication/2016 Bezryadin entropy.pdf"
+                            target="_blank">(link)</a></span>
+                </li>
+                <li>
+                    <span class="title">Formation of Quantum Phase Slip Pairs in Superconducting Nanowires</span>
+                    <span class="author">A. Belkin, M. Belkin, V. Vakaryuk, S. Khlebnikov, and A. Bezryadin</span>
+                    <span class="journal">Phys. Rev. X</span>
+                    <span class="vol">5</span>,
+                    <span class="page">021023</span>
+                    <span class="year">(2015)</span>
+                    <span class="publink"><a href="./publication/PhysRevX.5.021023.pdf" target="_blank">(link)</a></span>
+                </li>
+                <li>
+                    <span class="title">Self-Assembled Wiggling Nano-Structures and the Principle of Maximum Entropy
+                        Production</span>
+                    <span class="author">A. Belkin, A. Hubler, and A. Bezryadin</span>
+                    <span class="journal">Sci. Rep.</span>
+                    <span class="vol">5</span>,
+                    <span class="page">8323</span>
+                    <span class="year">(2015)</span>
+                    <span class="publink"><a href="./publication/Belkin_Scientific_Reports_2015.pdf"
+                            target="_blank">(link)</a></span>
+                </li>
+                <li>
+                    <span class="title">Measuring the superconducting coherence length in thin films using a two-coil
+                        experiment</span>
+                    <span class="author">John Draskovic, Thomas R. Lemberger, Brian Peters, Fengyuan Yang, Jaseung Ku,
+                        Alexey Bezryadin and Song Wang</span>
+                    <span class="journal">Phys.Rev.B</span>
+                    <span class="vol">88</span>,
+                    <span class="page">134516</span>
+                    <span class="year">(2013)</span>
+                    <span class="publink"><a href="./publication/PhysRevB.88.pdf" target="_blank">(link)</a></span>
+                </li>
+                <li>
+                    <span class="title">Universal Features of Counting Statistics of Thermal and Quantum Phase Slips
+                        in Nanosize Superconducting Circuits</span>
+                    <span class="author">A. Murphy, P. Weinberg, T. Aref, U. C. Coskun, V. Vakaryuk, A. Levchenko, and
+                        A. Bezryadin</span>
+                    <span class="journal">Phys.Rev.Lett</span>
+                    <span class="vol">110</span>,
+                    <span class="page">247001</span>
+                    <span class="year">(2013)</span>
+                    <span class="publink"><a href="./publication/Murphy_CountingStatistics_PRL_2013.pdf"
+                            target="_blank">(link)</a></span>
+                </li>
+                <li>
+                    <span class="title">Quantitative analysis of quantum phase slips in superconducting Mo76Ge24
+                        nanowires revealed
+                        by switching-current statistics</span>
+                    <span class="author">T. Aref, A. Levchenko, V. Vakaryuk, and A. Bezryadin</span>
+                    <span class="journal">Phys.Rev.B</span>
+                    <span class="vol">86</span>,
+                    <span class="page">024507</span>
+                    <span class="year">(2012)</span>
+                    <span class="publink"><a href="./publication/PhysRevB.86.024507_TAref.pdf"
+                            target="_blank">(link)</a></span>
+                </li>
+                <li>
+                    <span class="title">Stochastic and deterministic phase slippage in
+                        quasi-one-dimensional superconducting nanowires
+                        exposed to microwaves</span>
+                    <span class="author">Myung-Ho Bae, R C Dinsmore III, M Sahu and A Bezryadin</span>
+                    <span class="journal">New Journal of Physics</span>
+                    <span class="vol">14</span>,
+                    <span class="page">043014</span>
+                    <span class="year">(2012)</span>
+                    <span class="publink"><a href="./publication/2012 Bae New Journal of Physics.pdf"
+                            target="_blank">(link)</a></span>
+                </li>
+                <li>
+                    <span class="title">Tunneilling across a nanowire</span>
+                    <span class="author">Alexey Bezryadin</span>
+                    <span class="journal">Nature News&Views</span>
+                    <span class="vol">484</span>,
+                    <span class="page">324</span>
+                    <span class="year">(2012)</span>
+                    <span class="publink"><a href="./publication/2012 Bezryadin Nature News.pdf"
+                            target="_blank">(link)</a></span>
+                </li>
+                <li>
+                    <span class="title">Dynamics of superconducting nanowires shunted with an external resistor</span>
+                    <span class="author">Matthew W. Brenner,Dibyendu Roy,Nayana Shah,and Alexey Bezryadin</span>
+                    <span class="journal">Phys.Rev.B</span>
+                    <span class="vol">85</span>,
+                    <span class="page">224507</span>
+                    <span class="year">(2012)</span>
+                    <span class="publink"><a href="./publication/2012 Brenner shunts PhysRevB.85.224507.pdf"
+                            target="_blank">(link)</a></span>
+                </li>
+                <li>
+                    <span class="title">Distribution of Supercurrent Switching in Graphene under the Proximity
+                        Effect</span>
+                    <span class="author">U.C.Coskun, M.Brenner, T.Hymel, V.Vakaryuk, A. Levchenko, and Alexey
+                        Bezryadin</span>
+                    <span class="journal">Phys.Rev.Lett</span>
+                    <span class="vol">108</span>,
+                    <span class="page">097003</span>
+                    <span class="year">(2012)</span>
+                    <span class="publink"><a href="./publication/PRL_108_097003_2012_Coskum.pdf"
+                            target="_blank">(link)</a></span>
+                </li>
+                <li>
+                    <span class="title">Negative and positive magnetoresistance in bilayer graphene: Effects of weak
+                        localization and charge inhomogeneity</span>
+                    <span class="author">Yung-Fu Chenn, Myung-Ho Bae, Cesar Chialvo, Travis Dirks, Alexey Bezryadin,
+                        Nadya Mason</span>
+                    <span class="journal">Physica B</span>
+                    <span class="vol">406</span>,
+                    <span class="page">785</span>
+                    <span class="year">(2011)</span>
+                    <span class="publink"><a href="./publication/2011 Chen_Bezryadin_graphene_Physica_B_2011.pdf"
+                            target="_blank">(link)</a></span>
+                </li>
+                <li>
+                    <span class="title">Precise in situ tuning of the critical current of a superconducting nanowire
+                        using high bias voltage pulses</span>
+                    <span class="author">Thomas Aref and Alexey Bezryadin</span>
+                    <span class="journal">Nanotechnology</span>
+                    <span class="vol">22</span>,
+                    <span class="page">395302</span>
+                    <span class="year">(2011)</span>
+                    <span class="publink"><a href="./publication/Aref Bezryadin pulsing 2011.pdf"
+                            target="_blank">(link)</a></span>
+                </li>
+                <li>
+                    <span class="title">Little-Parks oscillations at low temperatures: Gigahertz resonator method</span>
+                    <span class="author">Andrey Belkin,Matthew Brenner, Thomas Aref, Jaseung Ku, and Alexey
+                        Bezryadin</span>
+                    <span class="journal">Applied Physics Letter</span>
+                    <span class="vol">98</span>,
+                    <span class="page">242504</span>
+                    <span class="year">(2011)</span>
+                    <span class="publink"><a
+                            href="./publication/Little-parks oscillations at low temperature_Andrey_APL.pdf"
+                            target="_blank">(link)</a></span>
+                </li>
+                <li>
+                    <span class="title">Cratered Lorentzian response of driven microwave superconducting
+                        nanowire-bridged resonators: oscillatory and magnetic-field induced stochastic states</span>
+                    <span class="author">Matthew W. Brenner, Sarang Gopalakrishnan, Jaseung Ku, Timothy J. McArdle,
+                        James N. Eckstein, Nayana Shah, Paul M. Goldbart, Alexey Bezryadin</span>
+                    <span class="journal">Phys. Rev. B</span>
+                    <span class="vol">83</span>,
+                    <span class="page">184503</span>
+                    <span class="year">(2011)</span>
+                    <span class="publink"><a href="./publication/PhysRevB.83.184503_Brenner.pdf"
+                            target="_blank">(link)</a></span>
+                </li>
+
+                <li>
+                    <span class="title">Superconducting nanowires as nonlinear inductive elements for qubits</span>
+                    <span class="author">Jaseung Ku, Vladimir Manucharyan, and Alexey Bezryadin</span>
+                    <span class="journal">Phys. Rev. B</span>
+                    <span class="vol">82</span>,
+                    <span class="page">134518</span>
+                    <span class="year">(2010)</span>
+                    <span class="publink"><a href="./publication/Jaseung Ku PhysRevB_82_134518.pdf"
+                            target="_blank">(link)</a></span>
+                </li>
+                <li>
+                    <span class="title">Stochastic dynamics of phase-slip trains and superconductive-resistive switching
+                        in current-biased nanowires</span>
+                    <span class="author">David Pekker, Nayana Shah, Mitrabhanu Sahu, Alexey Bezryadin, and Paul M.
+                        Goldbart</span>
+                    <span class="journal">Phys. Rev. B</span>
+                    <span class="vol">80</span>,
+                    <span class="page">214525</span>
+                    <span class="year">(2009)</span>
+                    <span class="publink"><a href="./publication/PhysRevB.80.214525.pdf"
+                            target="_blank">(link)</a></span>
+                </li>
+                <li>
+                    <span class="title">Individual topological tunnelling events of a quantum field probed through their
+                        macroscopic consequences</span>
+                    <span class="author">Mitrabhanu Sahu, Myung-Ho Bae, Andrey Rogachev, David Pekker, Tzu-Chieh Wei,
+                        Nayana Shah, Paul M. Goldbart and Alexey Bezryadin</span>
+                    <span class="journal">Nature Physics</span>
+                    <span class="vol">5</span>,
+                    <span class="page">503</span>
+                    <span class="year">(2009)</span>
+                    <span class="publink"><a href="./publication/nphys1276.pdf" target="_blank">(link)</a></span>
+                </li>
+                <li>
+                    <span class="title">Current-Phase Relationship, Thermal and Quantum Phase Slips in Superconducting
+                        Nanowires Made on a Scaffold Created Using Adhesive Tape</span>
+                    <span class="author">Myung-Ho Bae, Robert C. Dinsmore III, Thomas Aref, Matthew Brenner and Alexey
+                        Bezryadin</span>
+                    <span class="journal">Nano Lett.</span>
+                    <span class="vol">0</span>,
+                    <span class="page">0</span>
+                    <span class="year">(2009)</span>
+                    <span class="publink"><a href="./publication/Nanoletter_2009_MHBAE.pdf"
+                            target="_blank">(link)</a></span>
+                </li>
+                <li>
+                    <span class="title">Multiple-retrapping processes in the phase-diffusion regime of high-T-c
+                        intrinsic Josephson junctions</span>
+                    <span class="author">Myung-Ho Bae, M. Sahu, Hu-Jong Lee, and A. Bezryadin </span>
+                    <span class="journal">Phys. Rev. B</span>
+                    <span class="vol">79</span>,
+                    <span class="page">104509</span>
+                    <span class="year">(2009)</span>
+                    <span class="publink"><a href="./publication/PhysRevB.79.104509.pdf"
+                            target="_blank">(link)</a></span>
+                </li>
+                <li>
+                    <span class="title">Nanoslits in silicon chips</span>
+                    <span class="author">Thomas Aref, Matthew Brenner and Alexey Bezryadin</span>
+                    <span class="journal">Nanotechnology</span>
+                    <span class="vol">20</span>,
+                    <span class="page">045303</span>
+                    <span class="year">(2009)</span>
+                    <span class="publink"><a href="./publication/Bezryadin-nanoslits.pdf"
+                            target="_blank">(link)</a></span>
+                </li>
+                <li>
+                    <span class="title">Determination of the Superconductor-Insulator Phase Diagram for One-Dimensional
+                        Wires</span>
+                    <span class="author">A. T. Bollinger, R. C. Dinsmore III, A. Rogachev, and A. Bezryadin</span>
+                    <span class="journal">Phys. Rev. Lett</span>
+                    <span class="vol">101</span>,
+                    <span class="page">227003</span>
+                    <span class="year">(2008)</span>
+                    <span class="publink"><a href="./publication/BollingerDinsmoreRogachevBezryadin_PRL2008.pdf"
+                            target="_blank">(link)</a></span>
+                </li>
+                <li>
+                    <span class="title">Fractional order Shapiro steps in superconducting nanowires</span>
+                    <span class="author">R. C. Dinsmore III, Myung-Ho Bae, and A. Bezryadin</span>
+                    <span class="journal">Appl. Phys. Lett</span>
+                    <span class="vol">93</span>,
+                    <span class="page">192505</span>
+                    <span class="year">(2008)</span>
+                    <span class="publink"><a href="./publication/ApplPhysLett_93_192505.pdf"
+                            target="_blank">(link)</a></span>
+                </li>
+                <li>
+                    <span class="title">High-resolution nanofabrication using a highly focused electron beam</span>
+                    <span class="author">Thomas Aref, Mikas Remeika, and Alexey Bezryadin</span>
+                    <span class="journal">J. Appl. Phys.</span>
+                    <span class="vol">104</span>,
+                    <span class="page">024312</span>
+                    <span class="year">(2008)</span>
+                    <span class="publink"><a href="./publication/JApplPhys_104_024312.pdf"
+                            target="_blank">(link)</a></span>
+                </li>
+                <li>
+                    <span class="title">Zero-crossing Shapiro steps in high-Tc superconducting microstructures tailored
+                        by a focused ion beam</span>
+                    <span class="author">Myung-Ho Bae, R. c. Dinsmore III, M. Sahu, Hu-Jong Lee, and A. Bezryadin</span>
+                    <span class="journal">Phys. Rev. B</span>
+                    <span class="vol">77</span>,
+                    <span class="page">144501</span>
+                    <span class="year">(2008)</span>
+                    <span class="publink"><a href="./publication/PhysRevB_77_144501.pdf"
+                            target="_blank">(link)</a></span>
+                </li>
+                <li>
+                    <span class="title">Quantum suppression of superconductivity in nanowires</span>
+                    <span class="author">Alexey Bezryadin</span>
+                    <span class="journal">J. Phys.:Condens. Matter</span>
+                    <span class="vol">20</span>,
+                    <span class="page">043202 </span>
+                    <span class="year">(2008)</span>
+                    <span class="publink"><a href="./publication/Bezryadin_topical_reviewJPCMcm8_4_043202.pdf"
+                            target="_blank">(link)</a></span>
+                </li>
+                <li>
+                    <span class="title">Local superfluid densities probed via current-induced superconducting phase
+                        gradients</span>
+                    <span class="author">David S. Hopkins, David Pekker, Tzu-Chieh Wei, Paul M. Goldbart, and Alexey
+                        Bezryadin</span>
+                    <span class="journal">Phys. Rev. B</span>
+                    <span class="vol">76</span>,
+                    <span class="page">220506(R) </span>
+                    <span class="year">(2007)</span>
+                    <span class="publink"><a href="./publication/Hopkins-cross-current_PRB-76-2007.pdf"
+                            target="_blank">(link)</a></span>
+                </li>
+                <li>
+                    <span class="title">Dichotomy in short superconducting nanowires: Thermal phase slippage vs. Coulomb
+                        blockade</span>
+                    <span class="author">A. T. Bollinger, A. Rogachev and A. Bezryadin</span>
+                    <span class="journal">Europhysics letters</span>
+                    <span class="vol">76</span>,
+                    <span class="page">505 </span>
+                    <span class="year">(2006)</span>
+                    <span class="publink"><a href="./publication/EuroLett_76_505_2006_AB.pdf"
+                            target="_blank">(link)</a></span>
+                </li>
+
+                <li>
+                    <span class="title">Enhancing superconductivity: Magnetic impurities and their quenching by magnetic
+                        fields</span>
+                    <span class="author">T.-C. Wei, D. Pekker, A. Rogachev, A. Bezryadin and P. M. Goldbart</span>
+                    <span class="journal">Europhysics Letters</span>
+                    <span class="vol">75</span>,
+                    <span class="page">943</span>
+                    <span class="year">(2006)</span>
+                    <span class="publink"><a href="./publication/EuroLett_75_943_2006_TW.pdf"
+                            target="_blank">(link)</a></span>
+                </li>
+                <li>
+                    <span class="title">Magnetic-Field Enhancement of Superconductivity in UltranarrowWires</span>
+                    <span class="author">A. Rogachev, T.-C. Wei, D. Pekker, A. T. Bollinger, P.M. Goldbart, and A.
+                        Bezryadin</span>
+                    <span class="journal">Physical Review Leters</span>
+                    <span class="vol">97</span>,
+                    <span class="page">137001</span>
+                    <span class="year">(2006)</span>
+                    <span class="publink"><a href="./publication/PRL_97_137001_2006_AR.pdf"
+                            target="_blank">(link)</a></span>
+                </li>
+                <li>
+                    <span class="title">Fabrication of symmetric sub-5 nm nanopores using focused ion and electron
+                        beams</span>
+                    <span class="author">Chih Jen Lo, Thomas Aref and Alexey Bezryadin</span>
+                    <span class="journal">Nanotechnology</span>
+                    <span class="vol">17</span>,
+                    <span class="page">3264</span>
+                    <span class="year">(2006)</span>
+                    <span class="publink"><a href="./publication/nanotechnology_17_3264_2006_CJL.pdf"
+                            target="_blank">(link)</a></span>
+                </li>
+                <li>
+                    <span class="title">Operation of a superconducting nanowire quantum interference device with
+                        mesoscopic leads</span>
+                    <span class="author">David Pekker, Alexey Bezryadin, David S. Hopkins, and Paul M. Goldbart</span>
+                    <span class="journal">Physical Review B</span>
+                    <span class="vol">72</span>,
+                    <span class="page">104517</span>
+                    <span class="year">(2005)</span>
+                    <span class="publink"><a href="./publication/PRB_72_104517_2005_DP.pdf"
+                            target="_blank">(link)</a></span>
+                </li>
+                <li>
+                    <span class="title">Sub-10 nanometre fabrication: molecular templating, electron-beam sculpting and
+                        crystallization of metallic nanowires</span>
+                    <span class="author">M.Remeika and A.Bezryadin</span>
+                    <span class="journal">Nanotechnology</span>
+                    <span class="vol">16</span>,
+                    <span class="page">1172</span>
+                    <span class="year">(2005)</span>
+                    <span class="publink"><a href="./publication/nanotechnology_16_1172_2005_MR.pdf"
+                            target="_blank">(link)</a></span>
+                </li>
+                <li>
+                    <span class="title">Quantum Interference Device Made by DNA Templating of Superconducting
+                        Nanowires</span>
+                    <span class="author">David S. Hopkins, David Pekker, Paul M. Goldbart, Alexey Bezryadin</span>
+                    <span class="journal">Science</span>
+                    <span class="vol">308</span>,
+                    <span class="page">1792</span>
+                    <span class="year">(2005)</span>
+                    <span class="publink"><a
+                            href="http://www.sciencemag.org/cgi/content/full/308/5729/1762?maxtoshow=&HITS=10&hits=10&RESULTFORMAT=&fulltext=Bezryadin&searchid=1&FIRSTINDEX=0&resourcetype=HWCIT"
+                            target="_blank">[Full Text]</a>
+                </li>
+                <li>
+                    <span class="title">Quasi-ballistic electron transport in as-produced and annealed multiwall carbon
+                        nanotubes</span>
+                    <span class="author">Hisashi Kajiura, Anil Nandyala, Alexey Bezryadin</span>
+                    <span class="journal">Carbon</span>
+                    <span class="vol">43</span>,
+                    <span class="page">1317</span>
+                    <span class="year">(2005)</span>
+                    <span class="publink"><a href="./publication/Carbon_43_1317_2005_HK.pdf"
+                            target="_blank">(link)</a></span>
+                </li>
+                <li>
+                    <span class="title">Electronic mean free path in as-produced and purified single-wall carbon
+                        nanotubes</span>
+                    <span class="author">H. Kajiura,a A. Nandyala, U. C. Coskun, and A. Bezryadin / M. Shiraishib and M.
+                        Atac</span>
+                    <span class="journal">Applied Physics Letters</span>
+                    <span class="vol">86</span>,
+                    <span class="page">122106</span>
+                    <span class="year">(2005)</span>
+                    <span class="publink"><a href="./publication/APL_86_122106_2005_HK.pdf"
+                            target="_blank">(link)</a></span>
+                </li>
+                <li>
+                    <span class="title">Influence of High Magnetic Fields on the Superconducting Transition of
+                        One-Dimensional Nb and MoGe Nanowires</span>
+                    <span class="author">A. Rogachev, A. T. Bollinger, and A. Bezryadin</span>
+                    <span class="journal">Physical Review Letters</span>
+                    <span class="vol">94</span>,
+                    <span class="page">017004</span>
+                    <span class="year">(2005)</span>
+                    <span class="publink"><a href="./publication/PRL_94_017004_2005_AR.pdf"
+                            target="_blank">(link)</a></span>
+                </li>
+                <li>
+                    <span class="title">Phase slips in superconducting films with constrictions</span>
+                    <span class="author">Sang L. Chu, A. T. Bollinger, and A. Bezryadin</span>
+                    <span class="journal">Physical Review B</span>
+                    <span class="vol">70</span>,
+                    <span class="page">214506</span>
+                    <span class="year">(2004)</span>
+                    <span class="publink"><a href="./publication/PRB_70_214506_2004_SLC.pdf"
+                            target="_blank">(link)</a></span>
+                </li>
+                <li>
+                    <span class="title">Quasi-ballistic electron transport in double-wall carbon nanotubes</span>
+                    <span class="author">Hisashi Kajiura, Houjin Huang, Alexey Bezryadin</span>
+                    <span class="journal">Chemical Physics Letters</span>
+                    <span class="vol">398</span>,
+                    <span class="page">476</span>
+                    <span class="year">(2004)</span>
+                    <span class="publink"><a href="./publication/ChemPhyLett_398_476_2004_HK.pdf"
+                            target="_blank">(link)</a></span>
+                </li>
+                <li>
+                    <span class="title">Effect of morphology on the superconductor-insulator transition in
+                        one-dimensional nanowires</span>
+                    <span class="author">A. T. Bollinger, A. Rogachev, M. Remeika, and A. Bezryadin</span>
+                    <span class="journal">Physical Review B</span>
+                    <span class="vol">69</span>,
+                    <span class="page">180503(R)</span>
+                    <span class="year">(2004)</span>
+                    <span class="publink"><a href="./publication/PRB_69_180503_2004_ATB.pdf"
+                            target="_blank">(link)</a></span>
+                </li>
+                <li>
+                    <span class="title"><i>h/e</i> Magnetic Flux Modulation of the Energy Gap in Nanotube Quantum
+                        Dots</span>
+                    <span class="author">Ulas C. Coskun, Tzu-Chieh Wei, Smitha Vishveshwara, Paul M. Goldbart, Alexey
+                        Bezryadin</span>
+                    <span class="journal">Science</span>
+                    <span class="vol">304</span>,
+                    <span class="page">1132</span>
+                    <span class="year">(2004)</span>
+                    <span class="publink"><a
+                            href="http://www.sciencemag.org/cgi/content/full/304/5674/1132?maxtoshow=&HITS=10&hits=10&RESULTFORMAT=&fulltext=Bezryadin&searchid=1&FIRSTINDEX=0&resourcetype=HWCIT"
+                            target="_blank">[Full Text]</a>
+                </li>
+                <li>
+                    <span class="title">Superconducting properties of polycrystalline Nb nanowires templated by carbon
+                        nanotubes</span>
+                    <span class="author">A. Rogachev and A. Bezryadin</span>
+                    <span class="journal">Applied Physics Letters</span>
+                    <span class="vol">83</span>,
+                    <span class="page">512</span>
+                    <span class="year">(2003)</span>
+                    <span class="publink"><a href="./publication/APL_83_512_2003_AR.pdf"
+                            target="_blank">(link)</a></span>
+                </li>
+            </ul>
+            <a href="#top">Back to top</a>
+            <br />
+            <br />
+            <!-- *****************************Ph.D Thesis ********************************* -->
+            <div class="total-title" ID="PhDThesis">Ph.D Thesis</div>
+            <ul>
+                <li>
+                    <span class="title">Precise magnetic control of the supercurrent and fluxoids in nanodevices: Memory effects and diode effects</span>
+                    <span class="author">Silvia Song</span>
+                    <span class="year">(2024)</span>
+                    <span class="publink"><a href="./publication/Xiangyu_Silvia_Song_Thesis_20240829.pdf"
+                            target="_blank">(link)</a></span>
+                </li>
+                <li>
+                    <span class="title">MACROSCOPIC QUANTUM TUNNELING IN SUPERCONDUCTING NANOWIRE DEVICES</span>
+                    <span class="author">Andrew Murphy</span>
+                    <span class="year">(2017)</span>
+                    <span class="publink"><a href="./publication/Andrew Murphy Thesis.pdf"
+                            target="_blank">(link)</a></span>
+                </li>
+
+                <li>
+                    <span class="title">MEISSNER QUBIT: ARCHITECTURE, CHARACTERIZATION AND
+                        VORTEX-PROBING APPLICATIONS</span>
+                    <span class="author">Jaseung Ku</span>
+                    <span class="year">(2016)</span>
+                    <span class="publink"><a href="./publication/KU-DISSERTATION-2016.pdf"
+                            target="_blank">(link)</a></span>
+                </li>
+
+                <li>
+                    <span class="title">Dissipative Processes In Superconducting Nanodevices: Nanowire-Resonators,
+                        Shunted Nanowires, And Graphene Proximity Junctions</span>
+                    <span class="author">Matthew W. Brenner</span>
+                    <span class="year">(2011)</span>
+                    <span class="publink"><a href="./publication/Brenner_Matthew_PhDThesis.pdf"
+                            target="_blank">(link)</a></span>
+                </li>
+                <li>
+                    <span class="title">Probing Quantum Phase Slips In Superconducting Nanowires
+                        Modified Using High Bias Voltage Pulses</span>
+                    <span class="author">Thomas Aref</span>
+                    <span class="year">(2010)</span>
+                    <span class="publink"><a href="./publication/ArefPhDThesis.pdf" target="_blank">(link)</a></span>
+                </li>
+                <li>
+                    <span class="title">Switching current distributions of superconducting nanowire: Evidence of quantum
+                        phase slip events</span>
+                    <span class="author">Mitrabanu Sahu</span>
+                    <span class="year">(2009)</span>
+                    <span class="publink"><a href="./publication/Thesis_Mitrabhanu _Sahu.pdf"
+                            target="_blank">(link)</a></span>
+                </li>
+                <li>
+                    <span class="title">Microwave response in superconducting nanowires</span>
+                    <span class="author">Robert C. Dinsmore III</span>
+                    <span class="year">(2009)</span>
+                    <span class="publink"><a href="./publication/Thesis_Robert_Dinsmore.pdf"
+                            target="_blank">(link)</a></span>
+                </li>
+                <li>
+                    <span class="title">Measurements of Superconducting Phase Gradients by a Nanowire Quantum
+                        Interference Device Templated by DNA Molecules</span>
+                    <span class="author">David S. Hopkins</span>
+                    <span class="year">(2006)</span>
+                    <span class="publink"><a href="./publication/HopkinsPhDThesis.pdf" target="_blank">(link)</a></span>
+                </li>
+                <li>
+                    <span class="title"><i>h/e</i> Magnetic Flux Modulation of the Energy Gap in Nanotube Quantum
+                        Dots</span>
+                    <span class="author">Ulas Cosar Coskun</span>
+                    <span class="year">(2005)</span>
+                    <span class="publink"><a href="./publication/CoskunPhDThesis.pdf" target="_blank">(link)</a></span>
+                </li>
+                <li>
+                    <span class="title">Superconductor-Insulator Transition in Quasi-One-Dimensional Nanowires</span>
+                    <span class="author">Anthony T. Bollinger</span>
+                    <span class="year">(2005)</span>
+                    <span class="publink"><a href="./publication/BollingerPhDThesis.pdf"
+                            target="_blank">(link)</a></span>
+                </li>
+            </ul>
+            <a href="#top">Back to top</a>
+            <br />
+            <br />
+            <!-- ***************************** Book ********************************* -->
+            <div class="total-title" ID="Book">Book</div>
+            <ul>
+                <li>
+                    <span class="title">Superconductivity in Nanowires</span>
+                    <span class="author">Alexey Bezryadin, WILEY-VCH, (2013)</span>
+                </li>
+            </ul>
+            <a href="#top">Back to top</a>
+            <br />
+            <br />
+
+            <!-- ***************************** Patent ********************************* -->
+            <div class="total-title" ID="Patent">Patents</div>
+            <ul>
+                <li>
+                    <span class="title">Dielectric nanolayer capacitor and method of charging a dielectric nanolayer
+                        capacitor</span>
+                    <span class="author">Alexey Bezryadin, Eduard Ilin, Irina Burkova</span>
+                    <span class="journal">United States Patent</span>,
+                    <span class="page">17375251</span>
+                    <span class="year">(2022)</span>
+                    <span class="publink"><a href="https://patents.google.com/patent/US20220351902A1/en"
+                            target="_blank">(link)</a></span>
+                </li>
+                <li>
+                    <span class="title">Energy conversion with stacks of nanocapacitors</span>
+                    <span class="author">Matthias Grosse-Perdekamp, Andrey Belkin, Andrew P Friedl, Eric J Shinn, Alfred
+                        W Hubler, Dave Lyon, Alexey Bezryadin</span>
+                    <span class="journal">United States Patent</span>
+                    <span class="page"></span>
+                    <span class="year">(2017)</span>
+                    <span class="publink"><a
+                            href="https://experts.illinois.edu/en/publications/energy-conversion-with-stacks-of-nanocapacitors"
+                            target="_blank">(link)</a></span>
+                </li>
+                <li>
+                    <span class="title">Nanowire Structures and Electrical Devices </span>
+                    <span class="author">Alexey Bezryadin and Mikas Remeika</span>
+                    <span class="journal">United States Patent</span>,
+                    <span class="page">US 7,749,922 B2</span>
+                    <span class="year">(2010)</span>
+                    <span class="publink"><a href="./publication/2010 US07,749,922_Bezryadin TF04192-US.pdf"
+                            target="_blank">(link)</a></span>
+                </li>
+            </ul>
+            <a href="#top">Back to top</a>
+            <br />
+            <br />
+        </div> <!-- pub -->
+        <!--#include file="./footer.html"-->
+    </div> <!-- container -->
+</body>
+
+</html>

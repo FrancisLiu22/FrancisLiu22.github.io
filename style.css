@@ -1,0 +1,998 @@
+/* Layout stylesheet
+   By Cliff Sun
+   December, 2023
+   Modified by Francis May 2025
+   */
+
+/********************* page layout section ********************/
+body {
+  background-color: whitesmoke;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height:100%;
+  min-height: 100vh;
+  padding:0;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  width:100%
+}
+
+#container{
+  width: 100%;
+  margin: 0;
+  margin-left: 0;
+  margin-top: 0;
+  border: 0;
+  text-align: center;
+  flex: 1;
+  display: flex;
+  background-image: url('pictures/SQUID_crop.png');
+  background-size: cover;     
+  background-repeat: no-repeat;
+  background-position: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/****************************** navigator section *************************/
+/*Credits: Dynamic Drive CSS Library */
+/*URL: http://www.dynamicdrive.com/style/ */
+nav {
+  align-items: center;
+  justify-content: flex-start;
+  padding:0px;
+  margin-top: -1vh;
+  width:100%;
+  display: flex;
+  z-index: 5;
+  position: fixed;
+}
+nav ul{
+margin: 0;
+padding: 0;
+float: left;
+font-weight: bold;
+font-size: 180%;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+width: 100%;
+height: 100%;
+overflow: hidden;
+background: whitesmoke;
+list-style-type: none;
+align-items: center;
+text-align: center;
+padding-top: 3.5vh;
+padding-bottom: 1.0vh;
+}
+nav li{
+display: inline-block;
+text-align: center;
+}
+nav a{
+font-family: 'Times New Roman';
+float: left;
+color: black;
+padding: 0vh;
+text-decoration: none;
+text-align: center;
+border-left: 0.1vh solid none;
+width:10vw;
+font-size: 80%;
+}
+
+nav li a:visited{
+color: black;
+}
+nav li .current{
+color: black;
+/*background: transparent url('blockactive.gif') center center repeat-x;*/
+}
+
+/*
+nav li a:hover {text-decoration: underline;}
+*/
+
+.navLogo img {
+	
+/*   min-width: 45px; 
+  max-width: 45px; 
+  
+  width: auto; 
+  height: 45px; */
+
+  display: inline-block; 
+  height:45px;
+  width:auto;  
+}
+
+@font-face {
+  font-family: 'DMSerifDisplay-Regular';
+  src: url('fonts/DMSerifDisplay-Regular.ttf') format('truetype');
+  font-display: swap;
+}
+
+nav .groupName{
+  order:-1;
+  font-size: 100%;
+  font-family: 'DMSerifDisplay-Regular', sans-serif;
+  color:  black;
+  vertical-align:middle;
+  padding: 0vh 0vh;
+  margin-top: -2.85vh;
+  text-transform: capitalize;
+}
+
+.nav_links {
+  display: flex;
+  justify-content: center; /* Horizontal centering */
+  align-items: center; 
+  width: 100%;
+}
+
+.hover-underline {
+  position: relative;
+  color: #000; /* Adjust color */
+  margin: calc(15px + 0.5vw) calc(15px + 0.5vw);
+  font-size: calc(0.5vw + 0.4em);
+  text-decoration: none; /* Remove default underline */
+}
+
+/* Underline effect */
+.hover-underline::after {
+  content: '';
+  position: absolute;
+  width: 0; /* Start with no width */
+  height: 5px; /* Underline thickness */
+  bottom: -2px; /* Distance from text */
+  left: 25%; /* Start from left */
+  background-color: #FF552E; /* Underline color */
+  transition: width 0.3s ease; /* Animation speed */
+}
+
+/* Expand underline on hover */
+.hover-underline:hover::after {
+  width: 50%; /* Full width on hover */
+}
+
+
+
+/**************************** Home section **********************/
+
+.home {
+  position:relative;
+  color: #555555;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  width:100%;
+}
+
+.home .image-container img{
+  top:-110vh;
+  left:-15vw;
+  width: 126vw;
+  height: 225vh;
+  display: block;
+}
+
+.home .image-container {
+  top:-16vh;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+
+.home .overlay .left{
+  top:100vh;
+  position: absolute;
+  left:0;
+  height:auto;
+  z-index: 3;
+  background-color:whitesmoke;
+  width: 50%;
+  padding-bottom: 2vh;
+  min-height: 100vh;
+}
+
+.home .overlay .right{
+  top:100vh;
+  position: absolute;
+  left:50%;
+  height:auto;
+  z-index: 3;
+  background-color: whitesmoke;
+  width:50%;
+  padding-bottom: 2vh;
+  min-height: 100vh;
+}
+
+.home .overlay .left .left-container{
+  margin:5%;
+  padding:1%;
+  width:90%;
+  border: 0.2vh solid #d3d3d3;
+  text-align:justify;
+  padding-bottom: 2.23rem;
+}
+
+.home .overlay .right .right-container{
+  margin:5%;
+  padding:1%;
+  width:90%;
+  border: 0.2vh solid #d3d3d3;
+  text-align:justify;
+  padding-bottom: 2.5rem;
+}
+
+.home .overlay .right .right-bottom-container{
+  margin:5%;
+  padding:1%;
+  width:90%;
+  border: 0.2vh solid #d3d3d3;
+  text-align:justify;
+  padding-bottom: 2.5rem;
+}
+
+.home .overlay .right .right-bottom-container .positions-title{
+  text-align: center;
+  padding-top: 0px;
+  font-style: italic;
+  font-size: 2.4vw;
+}
+
+.home .overlay .right .right-bottom-container .positions{
+  margin-right:1.1vh;
+  position:relative;
+  font-size: x-large;
+  text-align: center;
+  margin-left:10%;
+}
+
+
+.home .overlay .right-container .announcements-title{
+  text-align: center;
+  top: -5px;
+  font-style: italic;
+  font-size: 2.4vw;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.home .overlay-text {
+  position: absolute; 
+  left: 50%; 
+  margin-top: 50vh;
+  transform: translate(-50%, -50%); 
+  background-color: transparent; 
+  width:90%;
+  color: #fff; 
+  padding: 1vh 2vh; 
+  font-size: 8vh; 
+  text-align: center;
+  z-index: 2;
+  text-shadow: 0 0 0.5vh black;
+}
+
+.home .overlay .left .about-us{
+  text-align: center;
+  padding-top: 0px;
+  font-size: 2.4vw;
+  font-style: italic;
+}
+
+.home .overlay .left .description-of-group{
+  margin-right:1.1vh;
+  position:relative;
+  font-size: x-large;
+  text-align: center;
+  margin-left:10%;
+}
+
+.home .overlay .topics-include{
+  margin-left:10%;
+  text-align: left;
+}
+
+.home .overlay .topics{
+  margin-left:10%;
+  margin-top: -1vh;
+  font-size: x-large;
+  text-align: left;
+  position:relative;
+  z-index: 3;
+  top:0;
+}
+
+.home .overlay .announcements{
+  list-style-type: none;
+  margin-left:0;
+  margin-top: -1vh;
+  font-size: x-large;
+  text-align: left;
+  position:relative;
+  z-index: 3;
+  top:0;
+}
+
+.announcements li {
+  list-style-type: none; 
+  display: flex;
+  flex-direction: column; /* stack vertically */
+  align-items: center;
+  justify-content: flex-start; /* start from top */
+  padding-bottom: 20px;
+}
+
+.announcement-image-cont {
+  margin-right: 0; /* Remove side gap */
+  margin-bottom: 1vw; /* Optional gap between image and text */
+}
+
+.announcement-text-cont {
+  flex: unset; /* Not needed for column layout */
+}
+
+
+.announcement-image{
+  max-width: 100%; 
+  max-height: 200px;
+  height: auto;   
+  display: block;
+}
+
+.announcement-text {
+  flex:1;
+}
+
+.home .overlay .location {
+  margin-left:10%;
+  text-align: left;
+}
+
+.home .overlay .location-types{
+  margin-left:10%;
+  margin-top: -1vh;
+  font-size: x-large;
+  text-align: left;
+  position:relative;
+  z-index: 3;
+  top:0;
+}
+
+.home a {
+  color: blue; /* Set the link color */
+  text-decoration:none; 
+  font-style: italic;
+}
+
+.home a:hover {
+  text-decoration:none;
+  color: purple; /* Set the link color on hover */
+}
+
+.textblock {
+	padding: 30px;
+	display: block;
+	font-family: Times New Roman;
+}
+
+.textblock h2 {
+	padding-left: 15%;
+}
+
+.textblock h3 {
+	padding-left: 15%;
+	margin-bottom: 40px;
+	font-weight: normal;
+	line-height: 200%;
+}
+
+.textblock ul {
+	padding-left: 0%; 
+	margin-bottom: 40px;
+}
+
+.textblock li {
+	text-align: left;
+	padding-left: 0px;
+	font-size: 20px;
+}
+
+/* The classes below are defined for slideshow */
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  height: calc(19em + 15vh);
+  width: calc(18em + 40vw);
+  position: relative;
+  margin: auto;
+  text-align: center;
+  line-height: calc(18em + 15vh); /* match container height */
+}
+
+.slideshow-container img {
+  max-height: calc(18em + 15vh); /* picture a bit smaller than container to see the caption well. */
+  max-width: calc(18em + 40vw);
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.mySlides .text {
+  line-height: normal;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  display: block;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%); 
+  width: auto;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  text-align: left;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  color:orange !important;
+}
+
+/* Caption text */
+.text {
+  color: white;
+  background-color: #00000090;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+/*slideshow complete*/
+
+/*classes blow are defined for the news list in main page*/
+.news-section {
+    width: 70%;
+    margin: 60px auto;
+    font-family: calibri, sans-serif;
+	color:black;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+	font-size:40px;
+}
+
+.news-list {
+    list-style: none;
+    padding: 0;
+}
+
+.news-item {
+    margin-bottom: 35px;
+    line-height: 1.7;
+    font-size: 20px;
+}
+
+/* subtle divider like your screenshot */
+.news-item:not(:last-child) {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 25px;
+}
+
+/* small, clean image under text */
+.news-image-small {
+    margin-top: 12px;
+    width: 300px;           /* fixed small preview */
+    border-radius: 6px;
+    display: block;
+}
+
+/* optional: make images feel lighter */
+.news-image-small:hover {
+    opacity: 0.9;
+}
+/*news complete*/
+
+/*************  Members section *********************/
+.members {
+  display: flex;
+  flex-direction: column;
+  position:relative;
+  color: #555555;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.members .top-part{ 
+  align-items: center;
+  text-align:center;
+  left:40%;
+  right:40%;
+  margin-top: 5%;
+  width: 20%;
+  height: auto;
+  background-color: transparent;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+}
+
+.members .name .total-name {
+  font-size: calc(0.4em + 0.8vw);
+}
+
+.members .name .description {
+  font-size: calc(0.4em + 0.8vw);
+  color:#555555;
+}
+.members .member-container {
+  margin-top: 150px;
+  height:auto;
+  width:20vw;
+  background-color: transparent;
+  box-sizing: border-box;
+  margin-bottom: 150px;
+  padding:1vh;
+  flex-direction: column;
+  transform: scale(1.3);
+}
+
+.members .left-part{
+  flex-grow:1;
+  margin-top: 2vh;
+  align-items: center;
+  text-align:center;
+  right:65%;
+  top: 500px;
+  width: 20vw;
+  height: auto;
+  padding: 2vh;
+  background-color: transparent;
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+}
+
+.members .right-part{
+  flex-grow:1;
+  margin-top: 2vh;
+  align-items: center;
+  text-align:center;
+  left:65%;
+  top: 500px;
+  width: 20vw;
+  height: auto;
+  padding: 2vh;
+  background-color: transparent;
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+}
+
+.members .alumni{
+  width:90%;
+  margin-bottom: 15vh;
+  align-items: center;
+  margin-top: auto;
+  padding-top: 5vh;
+  height: auto;
+}
+
+.alumni .alumni-title {
+  font-size: 300%;
+}
+.members .alumni ul{
+  text-align: left;
+  list-style-type:disc;
+  font-size: larger;
+}
+.members .alumni li{
+  font-size: x-large;
+  margin-top: 1vh;
+}
+
+
+.members .title {
+  font-size: x-large;
+}
+
+.members .name {
+  font-size: large;
+}
+
+.members .person-image img{
+  aspect-ratio: 1/1;
+  width: 80%;
+  object-fit: contain; 
+  border-width: 2px;
+}
+
+.members a:link    {text-decoration:none; color : blue;}
+.members a:visited {text-decoration:none;color:blue }
+.members a:hover   {text-decoration:none; color:purple }
+.members a:active  {text-decoration:none; color:blue}
+
+.members a:link    {text-decoration:none; color : blue;}
+.members a:visited {text-decoration:none;color:blue }
+.members a:hover   {text-decoration:none; color:purple }
+.members a:active  {text-decoration:none; color:blue}
+
+/************************ research section **************************/
+.research{
+  background-color: whitesmoke;
+  margin-top:150px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.research ul{
+  line-height:18px;
+  list-style-type: none;
+  font-size: 26px;
+  text-align: left;
+  padding-inline-start: 1vw;
+}
+
+.research li{
+  margin: 2vh;
+  line-height: 3.5vh;
+  color:#555555;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.research .curr-research-title {
+  color:#555555;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 2vh;
+  margin-left: 25%;
+}
+
+.research .news-title {
+  color:#555555;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 2vh;
+  margin-right: 25%;
+}
+
+.research .research-left {
+  flex-grow:1;
+  margin-top: 2vh;
+  align-items: center;
+  right:55%;
+  width: 50vw;
+  height: auto;
+  background-color: transparent;
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  flex-direction: column; 
+  padding-bottom: 8vh;
+}
+
+.research .research-right {
+  flex-grow:1;
+  margin-top: 2vh;
+  align-items: center;
+  left:55%;
+  width: 50vw;
+  height: auto;
+  background-color: transparent;
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  flex-direction: column; 
+  padding-bottom: 8vh;
+}
+
+.research .research-left-cont {
+  width:80%;
+  border: 2px solid  #e0e0e0;
+  align-items: center;
+  margin-left:27%;
+  max-width: 100%;
+}
+.research .research-right-cont {
+  width:80%;
+  border: 2px solid  #e0e0e0;
+  align-items: center;
+  margin-right:27%;
+  max-width: 100%;
+}
+.research .research-center-cont{
+  width:80%;
+  border: 2px solid  #e0e0e0;
+  align-items: center;
+  max-width: 100%;
+  margin-left:10%;
+}
+
+.research .announcements li {
+  list-style-type: none; 
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  margin-bottom: 4vh;
+}
+
+.research a:link    { text-decoration:none; color:blue }
+.research a:visited { text-decoration:none;color:blue }
+.research a:hover   { text-decoration:none;color:purple }
+.research a:active  { color:white }
+/************************* publication section **********************/
+
+.pub{
+  background-color: whitesmoke;
+  margin-top:150px;
+  left:10%;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.pub .pub-title {
+  text-align: center;
+  font-size: 60px;
+  color:#555555;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.pub .easy-access-pub{
+  display: flex;
+  font-size: 30px;
+  justify-content: center;
+  margin-top: 3vh;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: normal;
+}
+
+.pub ul{
+list-style-type: none;
+position: relative;
+text-align: left;
+line-height:18px;
+left:10%;
+width:80%;
+}
+.pub li{
+position: relative;
+margin-bottom: 3vh;
+color:#555555;
+}
+span.title {color:#555555;font: bold 24px times; display:block;margin-bottom:1px;}
+span.author {color:#555555;font: 15px verdana;display:block;}
+span.journal{ font:italic 13px verdana; color:#555555;}
+span.vol {font: bold 13px verdana; color:#555555;}
+span.page {font: normal 13px verdana;color:#555555;}
+span.publink{font: bold 13px verdana;color:#555555;}
+span.year {font: normal 13px verdana;color:#555555;}
+
+span.author1 {color:black;font: 12px verdana; }
+
+.pub a:link    {text-decoration:none; color :	blue   ;}
+.pub a:visited {text-decoration:none;color:blue }
+.pub a:hover   {text-decoration:none; color:purple }
+.pub a:active  {text-decoration:none; color:blue }
+
+.pub .total-title{
+  margin-top: 5vh;
+  font-size: 4vh;
+  font-style:italic;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: ce;
+  margin-bottom: 4vh;
+}
+
+/********************** footer section *********************************/
+
+footer {
+  position: fixed;
+  background-color: whitesmoke;
+  width: 100%;
+  color: black; 
+  text-align: center; 
+  font-size: small;
+  padding: 0px;
+  z-index: 4;
+  height:40px;
+  bottom:0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+footer a {
+  color: blue; /* Set the link color */
+  text-decoration: underline; /* Add an underline on links */
+}
+
+footer a:hover {
+  color: purple; /* Set the link color on hover */
+}
+
+@media only screen and (max-width: 1300px) {
+ 
+ nav ul{
+	 font-size:250%
+ }
+
+  .research .curr-research-title {
+    color:#555555;
+    font-size: 30px;
+	text-align: center;
+    margin-left: 25%;
+  }
+  
+  .research .news-title {
+    color:#555555;
+    font-size: 30px;
+    text-align: center;
+    margin-right: 25%;
+  }
+
+  .research ul{
+    list-style-type: none;
+    font-size: 26px;
+    text-align: left;
+  }
+  
+  .research li{
+    margin-top: 1vh;
+    line-height: 1;
+  }
+
+  .research .research-left {
+   margin-top: 4vh; 
+  }
+  
+  .research .research-right {
+    margin-top: 4vh;
+  }
+
+  .members .top-part {
+    top:7vh;
+  }
+ 
+  .members .left-part{
+    top:calc(100px + 35vw);
+  }
+  
+  .members .right-part{
+    top:calc(100px + 35vw);
+  }
+	
+	/*
+  .members .person-image img{
+    border-width: 2px;
+    width: 80%;
+	height: 80%;
+  }
+   */
+
+  .alumni .alumni-title {
+    font-size: 8vw;
+  }
+  .members .alumni ul{
+    text-align: left;
+    list-style-type:disc;
+    font-size: larger;
+  }
+  .members .alumni li{
+    font-size: 3vw;
+    margin-top: 1vh;
+  }
+
+  .members .alumni{
+    width:100%;
+  }
+
+  .home .overlay .right .right-bottom-container .positions-title{
+    font-size: 5vw;
+  }
+  
+  .announcements-title{
+    font-size: 5vw;
+  }
+  
+  .home .overlay .left .about-us{
+    font-size: 5vw;
+  }
+
+  .members .member-container {
+    margin-bottom: 150px;
+    margin-top: 150px;
+    width: 25vw;
+  }
+
+  .announcement-image{
+    max-width: 100%; 
+	max-height: 200px;
+	height: auto;   
+	display: block;
+  }
+
+  .announcements li {
+    margin-bottom: 3vh;
+  }
+
+  .research .announcements li {
+    margin-bottom: 3vh;
+    font-size: x-large;
+  }
+
+  .navLogo img {
+	  display: inline-block; 
+	  width: auto; 
+	  height: 45px;
+  }
+
+  .pub{
+    margin-top: 150px;
+  }
+
+  .home .overlay .right-container .announcements-title{
+    font-size: 5vw;
+  }
+  
+
+}
+
+/***************************** End of css ******************************/
+ 

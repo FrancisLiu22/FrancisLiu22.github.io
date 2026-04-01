@@ -1,0 +1,294 @@
+
+<div id="head-include"></div>
+<script>
+  fetch('head.html')
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById('head-include').innerHTML = html;
+    })
+    .catch(err => console.error('Failed to load head.html:', err));
+</script>
+
+<body>
+    <div id="header-include"></div>
+	<div id="navigator-include"></div>
+	<script>
+		  function includeHTML(id, file) {
+			fetch(file)
+			  .then(res => res.text())
+			  .then(html => {
+				document.getElementById(id).innerHTML = html;
+			  })
+			  .catch(err => console.error(`Failed to load ${file}:`, err));
+		  }
+
+		  includeHTML('header-include', 'header.html');
+		  includeHTML('navigator-include', 'navigator.html');
+		</script>
+        <div class="research">
+            <div class="research-left">
+                <div class="curr-research-title">Current publications</div>
+                <div class="research-left-cont">
+                    <ul>
+						<li>
+							<span class="title">A Dayem Loop Qubit Based on Interfering Superconducting Nanowires</span>
+							<span class="author">Cliff Sun, Alexey Bezryadin</span>
+							<span class="journal">arXiv preprint arXiv:2603.17214</span>
+							<span class="vol"></span>,
+							<span class="page"></span>
+							<span class="year">(2026)</span>
+							<span class="publink"><a href="https://arxiv.org/abs/2603.17214" target="_blank">(link)</a></span>
+						</li>
+						
+						<li>
+							<span class="title">Two-Level System Microwave Losses in Chemically Pure Bulk Niobium Oxide Samples</span>
+							<span class="author">Vishal Ganesan, Jiankun Zhang, Drew G. Wild, Alexey Bezryadin</span>
+							<span class="journal">arXiv preprint arXiv:2601.06668</span>
+							<span class="vol"></span>,
+							<span class="page"></span>
+							<span class="year">(2026)</span>
+							<span class="publink"><a href="https://arxiv.org/abs/2601.06668" target="_blank">(link)</a></span>
+						</li>
+						
+						<li>
+							<span class="title">Perfect Superconducting Diode and Supercurrent Range Controller</span>
+							<span class="author">Cliff Sun, Ziqi Zhao, Alexey Bezryadin</span>
+							<span class="journal">Physics Letters A</span>
+							<span class="vol">563</span>,
+							<span class="page">131055</span>
+							<span class="year">(2025)</span>
+							<span class="publink"><a href="https://doi.org/10.1016/j.physleta.2025.131055" target="_blank">(link)</a></span>
+						</li>
+						
+						<li>
+							<span class="title">Multiple-Nanowire Superconducting Quantum Interference Devices:
+								Critical Currents, Symmetries, and Vorticity Stability Regions</span>
+							<span class="author">Cliff Sun, Alexey Bezryadin</span>
+							<span class="journal">Nano Ex.</span>
+							<span class="vol">6</span>,
+							<span class="page">035014</span>
+							<span class="year">(2025)</span>
+							<span class="publink"><a href="https://iopscience.iop.org/article/10.1088/2632-959X/adfe5c" target="_blank">(link)</a></span>
+						</li>
+						
+                        <li>
+                            <span class="title">Interference, diffraction, and diode effects in superconducting array based on
+                                bismuth antimony telluride topological insulator</span>
+                            <span class="author">Xiangyu Song, Soorya Suresh Babu, Yang Bai, Dmitry S Golubev, Irina Burkova,
+                                Alexander Romanov, Eduard Ilin, James N Eckstein, Alexey Bezryadin</span>
+                            <span class="journal">Communications Physics</span>
+                            <span class="vol">6</span>,
+                            <span class="page">177</span>
+                            <span class="year">(2023)</span>
+                            <span class="publink"><a href="https://www.nature.com/articles/s42005-023-01288-9"
+                                    target="_blank">(link)</a></span>
+                        </li>
+        
+                        <li>
+                            <span class="title">Interference, diffraction, and diode effects in superconducting array based on
+                                Bi0. 8Sb1. 2Te3 topological insulator</span>
+                            <span class="author">Xiangyu Song, Soorya Suresh-Babu, Yang Bai, Dmitry Golubev, Irina Burkova,
+                                Alexander Romanov, Eduard Ilin, James N Eckstein, Alexey Bezryadin</span>
+                            <span class="journal">arXiv preprint arXiv:2209.14266</span>
+                            <span class="vol"></span>,
+                            <span class="page"></span>
+                            <span class="year">(2022)</span>
+                            <span class="publink"><a href="https://arxiv.org/abs/2209.14266" target="_blank">(link)</a></span>
+                        </li>
+        
+                        <li>
+                            <span class="title">
+                                Supercurrent-controlled kinetic inductance superconducting memory element</span>
+                            <span class="author">Eduard Ilin, Xiangyu Song, Irina Burkova, Andrew Silge, Ziang Guo, Konstantin
+                                Ilin, Alexey Bezryadin</span>
+                            <span class="journal">
+                                Applied Physics Letters</span>
+                            <span class="vol">118</span>,
+                            <span class="page"></span>
+                            <span class="year">(2021)</span>
+                            <span class="publink"><a href="https://pubs.aip.org/aip/apl/article/118/11/112603/39528"
+                                    target="_blank">(link)</a></span>
+                        </li>
+                        <li>
+                            <span class="title">
+        
+                                Dimensional changes in geological sandstone caused by wetting</span>
+                            <span class="author">Irina Burkova, Eduard Ilin, Alexander N Belov, Alexey Bezryadin</span>
+                            <span class="journal">
+                                Physics Education</span>
+                            <span class="vol">56</span>,
+                            <span class="page">034001</span>
+                            <span class="year">(2021)</span>
+                            <span class="publink"><a href="https://iopscience.iop.org/article/10.1088/1361-6552/abdea0/meta"
+                                    target="_blank">(link)</a></span>
+                        </li>
+                        <li>
+                            For more of our publications, check out <a href="https://research.physics.illinois.edu/bezryadin/publication.html">here!</a>
+                        </li>
+                    </ul>
+                    </ul>
+                </div>
+            </div>
+            <div class="research-right">
+                <div class="news-title">News About Our Research</div>
+                <div class="research-right-cont">
+                    <ul class="announcements">
+						<li>
+                            <div class="announcement-text-cont">
+							<p>03/30/2026 - Congratulations to our member Cliff Sun on earning the prestigious Goldwater Scholarship—an honor awarded to only around 400 students nationwide! 
+							<p>We’re incredibly proud of this outstanding achievement. Learn more about it <a
+                                    href="https://goldwaterscholarship.gov/">here!</a>
+                            </div>
+                        </li>
+						
+						<li>
+                            <div class="announcement-image-cont">
+                                <a
+                                    href="https://arxiv.org/abs/2603.17214">
+                                    <img class="announcement-image" src="pictures/dayem-loop-qubit.png">
+                                </a>
+                            </div>
+
+                            <div class="announcement-text-cont">03/21/2026 - We proposed a qubit design based on two parallel superconducting nanowires! Read about it <a
+                                    href="https://arxiv.org/abs/2603.17214">here!</a>
+                            </div>
+                        </li>
+						
+						<li>
+                            <div class="announcement-image-cont">
+                                <a
+                                    href="https://doi.org/10.1016/j.physleta.2025.131055">
+                                    <img class="announcement-image" src="pictures/Superconducting 2-nanowire.png">
+                                </a>
+                            </div>
+
+                            <div class="announcement-text-cont">10/13/2025 - We’ve predicted a perfect superconducting diode in nanowire systems! Read about it <a
+                                    href="https://doi.org/10.1016/j.physleta.2025.131055">here!</a>
+                            </div>
+                        </li>
+						
+						<li>
+                            <div class="announcement-image-cont">
+                                <a
+                                    href="https://iopscience.iop.org/article/10.1088/2632-959X/adfe5c">
+                                    <img class="announcement-image" src="pictures/VSR for a five-wire device.png">
+                                </a>
+                            </div>
+
+                            <div class="announcement-text-cont">8/12/2025 - Check out our most recent publication on the modeling of multiple-wire SQUID! Read about it <a
+                                    href="https://iopscience.iop.org/article/10.1088/2632-959X/adfe5c">here!</a>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="announcement-image-cont">
+                                <a
+                                    href="https://pubs.aip.org/aip/apl/article/118/11/112603/39528/Supercurrent-controlled-kinetic-inductance">
+                                    <img class="announcement-image" src="pictures/APL-Physics-Cover.jpg">
+                                </a>
+                            </div>
+
+                            <div class="announcement-text-cont">3/15/2021 - Our <a
+                                    href="https://pubs.aip.org/aip/apl/article/118/11/112603/39528/Supercurrent-controlled-kinetic-inductance"
+                                    target="_blank">research</a>
+                                selected as the cover image on the Applied Physics Letters Website! Read about it <a
+                                    href="https://physics.illinois.edu/research/highlights/35028">here!</a>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="announcement-image-cont">
+                                <a href="https://pubs.rsc.org/en/content/articlelanding/2020/nr/d0nr04660d/unauth">
+                                    <img class="announcement-image" src="pictures/Coulomb-Image.jpg">
+                                </a>
+                            </div>
+                            <div class="announcement-text-cont">
+                                9/2/2020 - Check out our <a
+                                    href="https://physics.illinois.edu/research/highlights/35027"
+                                    target="_blank">featured</a> paper on creating a Coulomb barrier in the Illinois
+                                Physics website!
+                            </div>
+                        </li>
+                        <li>
+                            <div class="announcement-image-cont">
+                                <a href="https://iopscience.iop.org/article/10.1088/1367-2630/aa7331/pdf">
+                                    <img class="announcement-image" src="pictures/Alexey-Murphy-Pic.jpg">
+                                </a>
+                            </div>
+                            <div class="announcement-text-cont">
+                                6/13/2017 - Curious about what Nanowire-SQUIDs are? Check out our
+                                <a href="https://iopscience.iop.org/article/10.1088/1367-2630/aa7331" target="_blank">paper</a>
+                                on the New Journal of Physics!
+                            </div>
+                        </li>
+                        <li>
+                            <div class="announcement-image-cont">
+                                <a href="https://physics.illinois.edu/news/34505">
+                                    <img class="announcement-image" src="pictures/nanotubes wiggle story.jpg">
+                                </a>
+                            </div>
+                            <div class="announcement-text-cont">
+                                2/9/2015 - The behavior of Nanotubes is connected to our understanding of the evolution of biological life on Earth? Read about it <a href="https://physics.illinois.edu/news/34505" target="_blank">here!</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="announcement-image-cont">
+                                <a href="https://www.science.org/doi/abs/10.1126/science.1111307?HITS=10&hits=10&FIRSTINDEX=0&searchid=1142123540911_8860&journalcode=sci&RESULTFORMAT=&maxtoshow=&fulltext=pekker">
+                                    <img class="announcement-image" src="pictures/DNA-SQUID.png">
+                                </a>
+                            </div>
+                            <div class="announcement-text-cont">
+                                6/1/2005 - DNA templated Nanowires demonstrate Quantum Interference Phenomena! Read the article <a href="https://physics.illinois.edu/news/34227">here!</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="announcement-image-cont">
+                                <a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.94.017004">
+                                    <img class="announcement-image" src="pictures/tiny-superconductors-withstand-magnetic-field.jpg">
+                                </a>
+                            </div>
+                            <div class="announcement-text-cont">
+                                2/4/2005 - Tiny superconductors have shown to withstand strong magnetic fields! <a href="https://phys.org/news/2005-02-tiny-superconductors-stronger-magnetic-fields.html">Check it out!</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="announcement-image-cont">
+                                <a href="https://physicsworld.com/a/nanotubes-switch-back-and-forth/">
+                                    <img class="announcement-image" src="pictures/nanotubes-switch-back-and-forth.jpg">
+                                </a>
+                            </div>
+                            <div class="announcement-text-cont">
+                                5/21/2004 - Nanotubes demonstrate potential in the realm of superconductors! <a href="https://physicsworld.com/a/nanotubes-switch-back-and-forth/">Discover more!</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="announcement-image-cont">
+                                <a href="https://www.science.org/doi/abs/10.1126/science.1096647">
+                                    <img class="announcement-image" src="pictures/Aharonov-Bohm effect.png">
+                                </a>
+                            </div>
+                            <div class="announcement-text-cont">
+                                4/1/2004 - Nanotubes oscillate from Metal to Semiconductor under a strong Magnetic Field! <a href="https://physics.illinois.edu/news/34228">Explore more!</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="announcement-image-cont">
+                                <a href="https://unisci.com/stories/20021/0319024.htm">
+                                    <img class="announcement-image" src="pictures/nanowires.jpg">
+                                </a>
+                            </div>
+                            <div class="announcement-text-cont">
+                                3/19/2002 - How small can a wire be and remain a superconductor? <a href="https://unisci.com/stories/20021/0319024.htm">Read about it!</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- <ul>
+                
+                        <li>
+                            3/19/2002 - How small can a wire be and remain a superconductor? <a href="https://unisci.com/stories/20021/0319024.htm">Read about it!</a>
+                        </li>
+                    </ul> -->
+                </div>
+            </div>
+        </div>
+</body>
