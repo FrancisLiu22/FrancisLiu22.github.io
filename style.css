@@ -36,7 +36,7 @@ html, body {
   background-repeat: no-repeat;
   background-position: center;
   flex-direction: column;
-  min-height: 100vh;
+  height: 70vh;
 }
 
 /****************************** navigator section *************************/
@@ -272,7 +272,7 @@ nav .groupName{
   width:90%;
   color: #fff; 
   padding: 1vh 2vh; 
-  font-size: 8vh; 
+  font-size: 6vh; 
   text-align: center;
   z-index: 2;
   text-shadow: 0 0 0.5vh black;
