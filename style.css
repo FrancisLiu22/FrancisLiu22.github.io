@@ -31,7 +31,9 @@ html, body {
   text-align: center;
   flex: 1;
   display: flex;
+  background-color: rgba(0, 0, 0, 0.2);
   background-image: url('pictures/SQUID_crop.png');
+  background-blend-mode: multiply;
   background-size: cover;     
   background-repeat: no-repeat;
   background-position: center;
