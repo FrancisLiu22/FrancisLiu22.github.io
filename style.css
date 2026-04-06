@@ -31,14 +31,12 @@ html, body {
   text-align: center;
   flex: 1;
   display: flex;
-  background-color: rgba(0, 0, 0, 0.2);
   background-image: url('pictures/SQUID_crop.png');
-  background-blend-mode: multiply;
   background-size: cover;     
   background-repeat: no-repeat;
   background-position: center;
   flex-direction: column;
-  height: 70vh;
+  height: 80vh;
 }
 
 /****************************** navigator section *************************/
@@ -274,7 +272,7 @@ nav .groupName{
   width:90%;
   color: #fff; 
   padding: 1vh 2vh; 
-  font-size: 6vh; 
+  font-size: 8vh; 
   text-align: center;
   z-index: 2;
   text-shadow: 0 0 0.5vh black;
@@ -395,7 +393,7 @@ nav .groupName{
 }
 
 .textblock ul {
-	padding-left: 0%; 
+	padding-left: 15%; 
 	margin-bottom: 40px;
 }
 
@@ -506,52 +504,6 @@ nav .groupName{
   to {opacity: 1}
 }
 /*slideshow complete*/
-
-/*classes blow are defined for the news list in main page*/
-.news-section {
-    width: 70%;
-    margin: 60px auto;
-    font-family: calibri, sans-serif;
-	color:black;
-}
-
-.section-title {
-    text-align: center;
-    margin-bottom: 40px;
-	font-size:40px;
-}
-
-.news-list {
-    list-style: none;
-    padding: 0;
-}
-
-.news-item {
-    margin-bottom: 35px;
-    line-height: 1.7;
-    font-size: 20px;
-}
-
-/* subtle divider like your screenshot */
-.news-item:not(:last-child) {
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 25px;
-}
-
-/* small, clean image under text */
-.news-image-small {
-    margin-top: 12px;
-    width: 300px;           /* fixed small preview */
-    border-radius: 6px;
-    display: block;
-}
-
-/* optional: make images feel lighter */
-.news-image-small:hover {
-    opacity: 0.9;
-}
-/*news complete*/
-
 /*************  Members section *********************/
 .members {
   display: flex;
